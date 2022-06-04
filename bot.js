@@ -14,7 +14,7 @@ const chats = {};
 let isInt = (n) => !isNaN(n) && Number.isInteger(Number(n));
 
 function response(room, msg, sender, isGroupChat, replier, imageDB, packageName) {
-    if (device.getBatteryLevel()>=15) {Api.makeNoti("전원이 부족해요!","배터리가 부족하여, 봇의 작동을 중단시켰어요.",444);Api.off();return;};
+    if (Device.getBatteryLevel()>=15) {Api.makeNoti("전원이 부족해요!","배터리가 부족하여, 봇의 작동을 중단시켰어요.",444);Api.off();return;};
    
     let date = new Date();
     
