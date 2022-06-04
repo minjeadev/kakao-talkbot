@@ -24,7 +24,7 @@ function response(room, msg, sender, isGroupChat, replier, imageDB, packageName)
     // 여기부턴 !명령어 인수입니다.
     if(cmd.length<=1) return;
     if (cmd[0] == (pf+"진동")) {
-        if(!isInt(cmd[1]) return replier.reply("정수를 입력하세요.");
+        if(!isInt(cmd[1])) return replier.reply("정수를 입력하세요.");
         vb.vibrate(Number(cmd[1])*1000);
     }
     
